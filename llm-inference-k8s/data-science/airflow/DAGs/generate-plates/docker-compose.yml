@@ -1,0 +1,7 @@
+version: '3'
+services:
+  svg2png:
+    build: .
+    volumes:
+      - .:/app
+    command: python generate.py a123bc78

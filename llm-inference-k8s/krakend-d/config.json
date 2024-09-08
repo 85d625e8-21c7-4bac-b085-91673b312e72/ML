@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "API Gateway",
+    "port": 8080,
+    "endpoints": [
+      {
+        "endpoint": "/api/ml",
+        "method": "GET",
+        "backend": [
+          {
+            "host": ["http://example.com"],
+            "url_pattern": "/v1/resource"
+          }
+        ]
+      }
+    ]
+  }
